@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or daily practice, please cite it using the metadata below."
+authors:
+  - family-names: "Varshney"
+    given-names: "Sparsh"
+    orcid: "https://orcid.org/0009-0004-7835-0673"
+    affiliation: "Amidha Ayurveda"
+    email: "sparshvarshney028@gmail.com"
+title: "Ayur-Chrono: Geo-Specific Ayurvedic Regimen Calculator"
+version: 1.0.0
+doi: 10.5281/zenodo.14986602 # Replace this with your actual DOI after Zenodo mints it, or remove this line for the initial push
+date-released: 2025-12-13
+url: "https://sciencewithsaucee-sudo.github.io/ayur-chrono/"
+repository-code: "https://github.com/sciencewithsaucee-sudo/ayur-chrono"
+license: MIT
+keywords:
+  - "ayurveda"
+  - "chronobiology"
+  - "dinacharya"
+  - "brahma-muhurta"
+  - "dosha-clock"
+  - "circadian-rhythm"
+  - "astronomical-calculator"
+abstract: >-
+  Ayur-Chrono is a research-grade, open-source web application that calculates precise Ayurvedic timing windows (Brahma Muhurta, Abhijit Muhurta, and Dosha Kalas) based on local solar coordinates. Unlike static charts, it uses the browser's Geolocation API and solar declination algorithms to adjust regimen schedules for specific latitudes, longitudes, and seasons.
+type: software
