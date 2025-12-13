@@ -7,13 +7,12 @@
     
     <meta name="keywords" content="Brahma Muhurta Calculator, Ayurvedic Clock, Dinacharya Tool, Dosha Kala, Circadian Rhythm Ayurveda, Sparsh Varshney, Digital Ayurveda">
     <meta name="author" content="Sparsh Varshney">
-    <meta name="description" content="Precise Ayurvedic Chronobiology Calculator based on solar cycles.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -48,26 +47,26 @@
                 <h2>Step 1: Location & Date</h2>
             </div>
             <div class="card-body">
-                <div class="loader-container">
+                <div style="position: relative;">
                     <div id="loader" class="loading-overlay hidden"><div class="spinner"></div></div>
                     
-                    <div class="card-body-grid input-grid">
+                    <div class="card-body-grid">
                         <div>
                             <label>Geographic Location</label>
-                            <div class="coords-group">
+                            <div style="display: flex; gap: 10px; margin-bottom: 10px;">
                                 <input type="number" id="lat" placeholder="Latitude" step="any">
                                 <input type="number" id="lng" placeholder="Longitude" step="any">
                             </div>
-                            <button id="locateBtn" class="btn btn-secondary full-width">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <button id="locateBtn" class="btn btn-secondary" style="width: 100%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 Auto-Detect Location
                             </button>
-                            <p id="location-status" class="status-text">Enter coordinates manually or click Auto-Detect.</p>
+                            <p id="location-status" style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 5px;">Enter coordinates manually or click Auto-Detect.</p>
                         </div>
                         <div>
                             <label>Date</label>
                             <input type="date" id="dateInput">
-                            <button id="calcBtn" class="btn btn-primary full-width mt-10">Calculate Timings</button>
+                            <button id="calcBtn" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Calculate Timings</button>
                         </div>
                     </div>
                 </div>
@@ -89,13 +88,13 @@
                             <div class="time-label">Brahma Muhurta</div>
                             <div class="time-value" id="brahmaTime">--:--</div>
                             <div class="time-desc">Ideal for Meditation & Study</div>
-                            <p class="time-note">(Starts 2 Muhurtas before sunrise)</p>
+                            <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top:5px;">(Starts 2 Muhurtas before sunrise)</div>
                         </div>
-                        <div class="time-card abhijit-card">
-                            <div class="time-label orange-text">Abhijit Muhurta</div>
-                            <div class="time-value orange-text" id="abhijitTime">--:--</div>
-                            <div class="time-desc orange-dark-text">Best Mid-day Time for Action</div>
-                            <p class="time-note">(Solar Noon Interval)</p>
+                        <div class="time-card" style="background: #fff7ed; border-color: #ffedd5;">
+                            <div class="time-label" style="color: #9a3412;">Abhijit Muhurta</div>
+                            <div class="time-value" style="color: #9a3412;" id="abhijitTime">--:--</div>
+                            <div class="time-desc" style="color: #c2410c;">Best Mid-day Time for Action</div>
+                            <div style="font-size: 0.8rem; color: var(--color-text-light); margin-top:5px;">(Solar Noon Interval)</div>
                         </div>
                     </div>
                     
@@ -121,7 +120,7 @@
                     <h2>Dinacharya & Dosha Cycle</h2>
                 </div>
                 <div class="card-body">
-                    <p class="table-intro">
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">
                         This schedule is dynamic based on your local Day Length (<span id="dayLength">--</span>) and Night Length (<span id="nightLength">--</span>).
                     </p>
                     <div class="data-table-container">
@@ -139,31 +138,33 @@
                     </div>
                 </div>
             </section>
+
         </div>
 
         <section class="seo-section card">
             <div class="card-body">
                 <h2>Cite this Tool</h2>
-                <div class="citation-container">
-                    <button id="copyCitationBtn" class="btn btn-outline btn-copy">Copy</button>
-                    <p id="citation-text">
+                <div style="position: relative;">
+                    <button id="copyCitationBtn" class="btn btn-outline" style="position: absolute; top: 0.75rem; right: 0.75rem; padding: 6px 8px; font-size: 0.8rem;">Copy</button>
+                    <p id="citation-text" style="font-family: monospace; background-color: var(--color-bg-light); padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
                         Varshney, S. (2025). Ayur-Chrono: Geo-Specific Ayurvedic Regimen Calculator (v1.0.0) [Software]. Amidha Ayurveda. https://www.amidhaayurveda.com/
-                    </p>
-                </div>
-
-                <h2>About the Creator</h2>
-                <div class="creator-info">
-                    <p>This tool was created and is maintained by <strong>Sparsh Varshney</strong>, a BAMS Student and Ayurvedic Researcher.</p>
-                    <p>
-                        <strong>ORCID:</strong> <a href="https://orcid.org/0009-0004-7835-0673" target="_blank" rel="noopener">0009-0004-7835-0673</a><br>
-                        <strong>Website:</strong> <a href="https://www.amidhaayurveda.com/p/about.html" target="_blank" rel="noopener">Amidha Ayurveda</a>
                     </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="app.js"></script>
-    <script src="main.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "SoftwareApplication",
+      "name": "Ayur-Chrono",
+      "operatingSystem": "Web",
+      "applicationCategory": "HealthApplication"
+    }
+    </script>
 </body>
 </html>
