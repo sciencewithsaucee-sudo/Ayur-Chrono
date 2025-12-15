@@ -1,6 +1,6 @@
 # ☀️ Ayur-Chrono: Ayurvedic Regimen Calculator
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17940277.svg)](https://doi.org/10.5281/zenodo.17940277)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JOSS Submission](https://img.shields.io/badge/JOSS-in%20preparation-blue.svg)](https://joss.theoj.org/)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/sciencewithsaucee-sudo/ayur-chrono/issues)
@@ -76,7 +76,7 @@ If you use this software in your research or clinical practice, please cite it.
 **Plain Text Citation:**
 
 > Varshney, S. (2025). *Ayur-Chrono: Geo-Specific Ayurvedic Regimen Calculator (v1.0.0)* [Software]. Zenodo.
-> [https://doi.org/10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX)
+> [https://doi.org/10.5281/zenodo.17940277](https://doi.org/10.5281/zenodo.17940277)
 
 ---
 
